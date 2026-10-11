@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Phigros 第九章「穹顶孤舟」· 资料在线查看</title>
+<link rel="stylesheet" href="assets/viewer.css">
+</head>
+<body>
+<header class="top">
+  <button id="btnMenu" class="icon" title="目录（M）" aria-label="目录">☰</button>
+  <div class="brand">
+    <span class="logo">PHI</span>
+    <span class="t1">第九章「穹顶孤舟」</span>
+    <span class="t2">资料在线查看</span>
+  </div>
+  <div class="search">
+    <input id="q" type="search" placeholder="搜索全部资料…（按 / 或 Ctrl+K）" autocomplete="off" spellcheck="false">
+    <button id="qclear" class="icon tiny" title="清空">✕</button>
+  </div>
+  <button id="btnToc" class="icon" title="本页大纲（T）" aria-label="大纲">≡</button>
+  <button id="btnTheme" class="icon" title="明/暗（D）" aria-label="主题">◐</button>
+  <a id="btnRaw" class="icon" target="_blank" rel="noopener" title="在 GitHub 上看原始 Markdown">↗</a>
+</header>
+
+<div class="layout">
+  <aside id="side" class="side">
+    <div class="side-head">资料目录</div>
+    <nav id="doclist" class="doclist"></nav>
+    <div class="side-foot">
+      <div id="baseInfo" class="muted small">资料路径：检测中…</div>
+      <div class="muted small">来源分级见 <a href="#" data-doc="07">07_语料与考据</a></div>
+    </div>
+  </aside>
+
+  <main id="main" class="main">
+    <div id="status" class="status">正在加载…</div>
+    <article id="content" class="content" hidden></article>
+  </main>
+
+  <nav id="toc" class="toc">
+    <div class="toc-head">
+      <span>本页大纲</span>
+      <input id="tocFilter" type="search" placeholder="过滤标题…" autocomplete="off">
+    </div>
+    <div id="toclist" class="toclist"></div>
+  </nav>
+</div>
+
+<div id="results" class="results" hidden>
+  <div class="results-head"><span id="resultsTitle">搜索结果</span><button id="resultsClose" class="icon tiny">✕</button></div>
+  <div id="resultsList" class="results-list"></div>
+</div>
+
+<footer class="foot">
+  <span>纯静态页面，零依赖（Markdown 渲染器已本地化）· 资料 9 份 · 快捷键：<kbd>/</kbd> 搜索 <kbd>M</kbd> 目录 <kbd>T</kbd> 大纲 <kbd>D</kbd> 主题 <kbd>←</kbd><kbd>→</kbd> 翻篇</span>
+</footer>
+
+<script src="assets/marked.min.js"></script>
+<script src="assets/viewer.js"></script>
+</body>
+</html>
